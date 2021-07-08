@@ -1,0 +1,745 @@
+body {
+    font-family: 'DM Sans' !important;
+    /* margin-bottom: 2000px !important; */
+}
+
+/* FOOTER */
+footer .akreditasi p {
+    color: #8292A6;
+}
+
+footer .akreditasi {
+    margin-top: 100px;
+}
+
+footer .paymentsWrapper img {
+    margin-right: 7px;
+}
+
+footer .medsosWrapper img {
+    margin-right: 6px;
+}
+
+footer ul li p {
+    font-weight: 700;
+}
+
+footer ul li a {
+    font-size: 15px;
+    color: #8292A6;
+}
+
+footer ul li {
+    margin-bottom: 25px !important;
+}
+
+footer .desc p {
+    color: #8292A6;
+    font-size: 16px;
+    line-height: 200%;
+}
+
+footer .desc h5 {
+    color: #1B2C42;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+footer {
+    margin-top: 120px;
+}
+
+/* SEMPURNA */
+
+.sempurna .inputWrapper button {
+    color: white;
+}
+
+.sempurna .subscribe button {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 12px 14px;
+    border: #A4ABBA 1px solid;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.sempurna ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    font-size: 17px;
+}
+
+.sempurna input {
+    color: white;
+    width: 73%;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: #A4ABBA 1px solid;
+    font-size: 18px;
+}
+
+.sempurna .subscribe p {
+    color: white;
+    font-size: 18px;
+}
+
+.sempurna .subscribe {
+    background: linear-gradient(150deg, #4DA8FD, #854DFD);
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: -100px;
+    z-index: 99;
+    position: relative;
+}
+
+.sempurna .buttonWrapper {
+    margin-top: 40px;
+}
+
+.sempurna .buttonWrapper button {
+    padding: 16px 25px;
+    border-radius: 10px;
+}
+
+.sempurna .buttonWrapper button:nth-child(1):hover {
+    background: white;
+    transition: .3s;
+    color: #3299FE;
+}
+
+.sempurna .buttonWrapper button:nth-child(2):hover {
+    background: #EF5DA8;
+    transition: .3s;
+    color: #fff;
+}
+
+.sempurna .buttonWrapper button:nth-child(1) {
+    transition: .3s;
+    background: #3299FE;
+    margin-right: 15px;
+    color: white;
+    border: 1px solid #3299FE;
+}
+
+.sempurna .buttonWrapper button:nth-child(2) {
+    transition: .3s;
+    background: rgba(255, 255, 255, 0.2);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #A4ABBA;
+    color: white;
+}
+
+.sempurna p {
+    color: #8292A6;
+    line-height: 175%;
+    font-size: 18px;
+    padding-right: 50px;
+}
+
+.sempurna h1 {
+    background: linear-gradient(to right, #FDA14D 10%, #FD4DF6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: orange; */
+    font-size: 54px;
+}
+
+.sempurna {
+    background-position-x: 50%;
+    position: relative;
+    /* border-top-left-radius: 1000px 200px;
+    border-top-right-radius: 1000px 200px;
+    background: #0D1E46; */
+    background-image: url('../assets/img/sempurna-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 705px;
+    padding-top: 190px;
+}
+
+/* TANYA JAWAB */
+.activeListFaq {
+    color: #3299FE;
+    background: #EBF5FF;
+    fill: #3299FE;
+}
+
+.tanyaJawab .listFaqWrapper:hover .myFill {
+    transition: .3s;
+    fill: #3299FE;
+}
+
+.tanyaJawab .myFill {
+    transition: .3s;
+}
+
+.tanyaJawab .faqWrapper h5 {
+    padding: 10px 40px;
+}
+
+.tanyaJawab .listFaqWrapper {
+    transition: .3s;
+    padding: 10px 40px;
+}
+
+.tanyaJawab .listFaqWrapper:hover {
+    transition: .3s;
+    background: #EBF5FF;
+}
+
+.tanyaJawab .listFaqWrapper:hover {
+    cursor: pointer;
+}
+
+.tanyaJawab .listFaqWrapper:hover p {
+    color: #3299FE;
+}
+
+.tanyaJawab .leftContent {
+    overflow: scroll;
+    padding: 40px 0px 33px 0px;
+    border-right: solid 1px #EAEAEA;
+}
+
+.tanyaJawab .rightContent {
+    overflow: scroll;
+    padding: 40px 45px;
+}
+
+.tanyaJawab .rightContent p {
+    font-size: 16px;
+    line-height: 200%;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+
+    color: #8292A6;
+}
+
+.tanyaJawab .rightContent h3 {
+    font-size: 28px;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+}
+
+.tanyaJawab .faqWrapper {
+    height: 818px;
+    margin-top: 70px;
+    box-shadow: 0px 16px 64px rgba(0, 7, 46, 0.04);
+    border-radius: 15px;
+}
+
+.tanyaJawab .faqWrapper p {
+    letter-spacing: 0.05em;
+    font-size: 16px;
+}
+
+.tanyaJawab .faqWrapper svg {
+    margin-right: 15px;
+}
+
+.tanyaJawab {
+    border-top: solid #EAEAEA;
+    margin-top: 105px;
+    padding: 80px 0;
+}
+
+/* BANTUAN */
+.bantuan .title h1,
+.tanyaJawab .title h1 {
+    background: linear-gradient(to right, #FD4DEB 10%, #664DFD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    /* color: #1B2C42; */
+    letter-spacing: 0.05em;
+}
+
+.bantuan .title p,
+.tanyaJawab .title p {
+    color: #8292A6;
+    font-size: 16px;
+}
+
+.bantuan .content img {
+    margin-bottom: 25px;
+}
+
+.bantuan .content {
+    border-radius: 15px;
+    padding: 40px 20px 0 20px;
+    height: 465px;
+}
+
+.bantuan .content p {
+    font-weight: 400;
+    color: white;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.bantuan .col-lg-4:nth-child(1) .content {
+    background-image: linear-gradient(150deg, #FDA14D, #FD4DF6);
+}
+
+.bantuan .col-lg-4:nth-child(2) .content {
+    background-image: linear-gradient(150deg, #4DFDF2, #4D74FD);
+}
+
+.bantuan .col-lg-4:nth-child(3) .content {
+    background-image: linear-gradient(150deg, #FD7EF0, #907EFD);
+}
+
+.bantuan {
+    padding-top: 105px;
+}
+
+/* ABOUT */
+.about .navSide p:hover {
+    cursor: pointer;
+    border-left: 2px solid #3299FE !important;
+    font-weight: 700;
+}
+
+.activeBorder {
+    font-weight: 700 !important;
+    border-left: 2px solid #3299FE !important;
+    color: #1B2C42 !important;
+}
+
+.about .navSide {
+    color: #8292A6;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+.about .navSide p {
+    /* margin-bottom: 30px; */
+    padding: 10px 0px 10px 30px;
+    border-left: 2px solid #E5E9F2;
+}
+
+.about .content {
+    padding-right: 20px;
+}
+
+.about {
+    border-top: solid #EAEAEA;
+    border-bottom: solid #EAEAEA;
+    margin-top: 105px;
+    padding: 105px 0;
+}
+
+.about .content p {
+    color: #8292A6;
+    letter-spacing: 0.05em;
+    text-align: justify;
+    line-height: 200%;
+}
+
+.about .content h3 {
+    line-height: 49px;
+    color: #1B2C42;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+}
+
+/* INFO JARINGAN */
+.infoJaringan .rightContent p {
+    width: 80%;
+    color: #fff;
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.infoJaringan .rightContent {
+    height: 580px;
+    background-image: linear-gradient(100deg, #4DA8FD, #854DFD);
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 40px 35px;
+}
+
+.infoJaringan .leftContent img {}
+
+.infoJaringan .leftContent p,
+.infoJaringan .rightContent p {
+    margin-left: 15px;
+}
+
+
+.infoJaringan .leftContent p {
+    width: 80%;
+    color: #8292A6;
+    margin-top: -4px;
+    font-size: 16px;
+    line-height: 200%;
+}
+
+.infoJaringan .leftContent {
+    height: 580px;
+    background: #0D1E46;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 40px 35px;
+}
+
+/* VPS CUSTOM */
+.vpsCustom .leftContent button {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.vpsCustom .leftContent p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.vpsCustom {
+    margin-top: 30px;
+    background: #EF5DA8;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+
+/* SERVER VPS */
+.serverVps .content {
+    padding: 15px 30px;
+}
+
+.serverVps .verticalLine {
+    background: red;
+    height: 100%;
+    width: 2px;
+}
+
+.serverVps .content-wrapper {
+    box-shadow: 0px 16px 64px rgba(0, 7, 46, 0.04);
+    border-radius: 15px;
+    background: white;
+}
+
+.serverVps .paket .month {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-left: solid 1px #E6EAF1;
+    align-items: center;
+    height: 100%;
+}
+
+.serverVps .paket .month h5 {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.serverVps .paket h5 {
+    color: #1B2C42;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+}
+
+.serverVps .paket p {
+    font-size: 14px;
+    color: #8292A6;
+    margin-bottom: 5px;
+}
+
+.serverVps .dateWrapper {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.serverVps .dateWrapper p {
+    color: #b20098;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.serverVps .serverWrapper p {
+    padding: 10px 25px;
+    border-radius: 200px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.activeServer {
+    background-image: linear-gradient(to right, #FD4DF6, #FDA14D);
+    color: white !important;
+}
+
+.serverVps .serverWrapper p:nth-child(1):hover {
+    cursor: pointer;
+}
+
+.serverVps .serverWrapper p:hover {
+    cursor: pointer;
+}
+
+.serverVps .serverWrapper p:nth-child(1) {
+    color: #3B4859;
+    transition: .3s;
+}
+
+.serverVps .serverWrapper p:nth-child(2) {
+    color: #3B4859;
+    transition: .3s;
+
+}
+
+.serverVps {
+    margin-top: -150px;
+    /* z-index: -999; */
+    position: relative;
+    background: white;
+    border: #E5E9F2 solid 1px;
+    padding: 50px;
+    border-radius: 15px;
+}
+
+/* NAV */
+.custom-toggler.navbar-toggler {
+    border-color: white !important;
+}
+
+.navbar {
+    padding-top: 20px !important;
+}
+
+/* nav .login {
+    padding: 13px 26px;
+    border-radius: 10px;
+    font-weight: 700;
+    border: solid 1.5px white;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+} */
+
+nav ul li .nav-link {
+    color: white;
+    margin-right: 40px;
+    font-size: 16px;
+}
+
+/* HEADER */
+
+.whiteBg {
+    background-image: url('../assets/img/white-bg.png');
+    background-repeat: no-repeat;
+    margin-top: -100px;
+    height: 151px;
+    background-size: cover;
+}
+
+header {
+    /* background: linear-gradient(330deg, #5e00fc, #b20098, #22b4fa, #ff9e33); */
+    /* background-size: 800% 800%; */
+
+    /* -webkit-animation: AnimationName 15s ease infinite; */
+    /* -moz-animation: AnimationName 15s ease infinite; */
+    /* animation: AnimationName 15s ease infinite; */
+    padding-top: 130px;
+    height: 800px;
+    margin-top: -90px;
+
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: white !important;
+}
+
+header p {
+    line-height: 34px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 991px) {
+    .sempurna .subscribe {
+        padding: 20px;
+    }
+
+    .sempurna input {
+        width: 60%;
+        padding: 12px 16px;
+
+    }
+
+    .sempurna .subscribe {
+        margin-top: -100px;
+    }
+
+    .sempurna {
+        padding-left: 15px;
+        height: 950px;
+        padding-top: 100px;
+    }
+
+    .tanyaJawab .faqWrapper {
+        /* width: 818px; */
+        height: 818px;
+        margin-top: 70px;
+        overflow: scroll;
+    }
+
+    .tanyaJawab .rightContent {
+        /* overflow: scroll; */
+        /* width: 500px; */
+    }
+
+    .about .navSide {
+        margin-bottom: 50px;
+    }
+
+    .serverVps {
+        margin-top: -50px;
+        /* z-index: -999; */
+        position: relative;
+        background: white;
+        border: #E5E9F2 solid 1px;
+        padding: 50px;
+        border-radius: 15px;
+    }
+
+    .whiteBg {
+        display: none;
+    }
+
+    footer .paymentsWrapper img {
+        margin-bottom: 20px;
+    }
+
+    .infoJaringan .leftContent,
+    .infoJaringan .rightContent {
+        overflow: scroll;
+    }
+
+    .vpsCustom .cardWrapper {
+        flex-direction: column;
+    }
+
+    .serverVps .paketWrapper p {
+        font-size: 12px;
+    }
+
+
+    .serverVps .paketWrapper h5 {
+        font-size: 14px;
+    }
+
+    .serverVps .content {
+        padding: 15px 20px;
+    }
+
+    .serverVps .serverWrapper p {
+        padding: 5px 20px;
+        border-radius: 200px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .serverVps .unlimitedBandwith {
+        margin-top: 15px;
+        padding: 0 15px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .serverVps .paket .month {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-left: none;
+        border-top: solid 1px #E6EAF1;
+        align-items: center;
+        height: 100%;
+        padding: 20px 0;
+    }
+
+    .serverVps .paket .month h5 {
+        font-size: 16px;
+    }
+
+    .serverVps {
+        padding: 0px;
+    }
+
+    .serverVps .toggleRow {
+        justify-content: center;
+    }
+
+    .serverVps .serverWrapper {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px !important;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    header {
+        height: 600px;
+    }
+
+    .navbar {
+        background: linear-gradient(330deg, #5e00fc, #b20098, #22b4fa, #ff9e33);
+        background-size: 800% 800%;
+
+        -webkit-animation: AnimationName 15s ease infinite;
+        -moz-animation: AnimationName 15s ease infinite;
+        animation: AnimationName 15s ease infinite;
+    }
+}
+
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 1% 0%
+    }
+
+    50% {
+        background-position: 99% 100%
+    }
+
+    100% {
+        background-position: 1% 0%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 1% 0%
+    }
+
+    50% {
+        background-position: 99% 100%
+    }
+
+    100% {
+        background-position: 1% 0%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 1% 0%
+    }
+
+    50% {
+        background-position: 99% 100%
+    }
+
+    100% {
+        background-position: 1% 0%
+    }
+}

@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IDCH</title>
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/utility.css">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- NAVIGASI -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/svg/logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Company</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Promo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bantuan</a>
+                    </li>
+                </ul>
+                <button href="#" class="btnPrimary text-white nav-link">LOGIN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- END NAVIGASI -->
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row text-center justify-content-center">
+                <div class="col-lg-10">
+                    <div class="content">
+                        <h1 class="text-white">Virtual Private Server</h1>
+                        <p class="text-white">IDCloudHost Menawarkan Server VPS Murah Indonesia dengan Performa dan
+                            Teknologi Multifungsi
+                            yang Dapat Diinstall di Semua Sistem Operasi. Berlangganan sekarang dapatkan berbagai
+                            kemudahan untuk kebutuhan Server Website & Aplikasi Anda.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <img class="img-fluid mt-3" src="./assets/img/header-img.png" alt="">
+                </div>
+            </div>
+            <!-- <div class="box1"></div> -->
+            <!-- <div class="box2"></div> -->
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <div class="whiteBg"></div>
+
+
+    <!-- SERVER VPS -->
+    <div class="container">
+        <section class="serverVps">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row toggleRow">
+                        <div class="col-lg-6 col-12">
+                            <div class="serverWrapper d-flex">
+                                <p @click=" dataServer = 1 " :class="{ activeServer : dataServer == '1' }" class="m-0">
+                                    SERVER VPS PRO</p>
+                                <div class="mx-2"></div>
+                                <p @click=" dataServer = 2 " :class="{ activeServer : dataServer == '2' }" class="m-0">
+                                    SERVER VPS SAS</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="dateWrapper d-flex align-items-center">
+                                <p class="m-0">Bulan</p>
+                                <div class="mx-2">
+                                    <label class="switch">
+                                        <input type="checkbox" checked>
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <p class="m-0">Tahun</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content align-items-center">
+
+                    </div>
+                </div>
+            </div>
+            <template v-if="dataServer == '1'">
+                <div class="row paket mt-5">
+                    <div class="col-12">
+                        <div class="content-wrapper">
+                            <div class="row">
+                                <div class="col-lg-9 col-12">
+                                    <div
+                                        class="content d-flex justify-content-between align-items-center paketWrapper mb-2">
+                                        <div>
+                                            <p class="mb-0">Paket</p>
+                                            <h5 class="mb-0">VPS Pro+1</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">CPU</p>
+                                            <h5 class="mb-0">2 Core</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Storage Space</p>
+                                            <h5 class="mb-0">30 GB</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Virtual Memory</p>
+                                            <h5 class="mb-0">1024 MB</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="month">
+                                        <h5>Rp 100.000 <span>/bln</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row paket mt-3">
+                    <div class="col-12">
+                        <div class="content-wrapper">
+                            <div class="row">
+                                <div class="col-lg-9 col-12">
+                                    <div
+                                        class="content d-flex justify-content-between align-items-center paketWrapper mb-2">
+                                        <div>
+                                            <p class="mb-0">Paket</p>
+                                            <h5 class="mb-0">VPS Pro+1</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">CPU</p>
+                                            <h5 class="mb-0">2 Core</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Storage Space</p>
+                                            <h5 class="mb-0">30 GB</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Virtual Memory</p>
+                                            <h5 class="mb-0">1024 MB</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="month">
+                                        <h5>Rp 100.000 <span>/bln</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row paket mt-3">
+                    <div class="col-12">
+                        <div class="content-wrapper">
+                            <div class="row">
+                                <div class="col-lg-9 col-12">
+                                    <div
+                                        class="content d-flex justify-content-between align-items-center paketWrapper mb-2">
+                                        <div>
+                                            <p class="mb-0">Paket</p>
+                                            <h5 class="mb-0">VPS Pro+1</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">CPU</p>
+                                            <h5 class="mb-0">2 Core</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Storage Space</p>
+                                            <h5 class="mb-0">30 GB</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Virtual Memory</p>
+                                            <h5 class="mb-0">1024 MB</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="month">
+                                        <h5>Rp 100.000 <span>/bln</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row paket mt-3">
+                    <div class="col-12">
+                        <div class="content-wrapper">
+                            <div class="row">
+                                <div class="col-lg-9 col-12">
+                                    <div
+                                        class="content d-flex justify-content-between align-items-center paketWrapper mb-2">
+                                        <div>
+                                            <p class="mb-0">Paket</p>
+                                            <h5 class="mb-0">VPS Pro+1</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">CPU</p>
+                                            <h5 class="mb-0">2 Core</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Storage Space</p>
+                                            <h5 class="mb-0">30 GB</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Virtual Memory</p>
+                                            <h5 class="mb-0">1024 MB</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="month">
+                                        <h5>Rp 100.000 <span>/bln</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row paket mt-3">
+                    <div class="col-12">
+                        <div class="content-wrapper">
+                            <div class="row">
+                                <div class="col-lg-9 col-12">
+                                    <div
+                                        class="content d-flex justify-content-between align-items-center paketWrapper mb-2">
+                                        <div>
+                                            <p class="mb-0">Paket</p>
+                                            <h5 class="mb-0">VPS Pro+1</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">CPU</p>
+                                            <h5 class="mb-0">2 Core</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Storage Space</p>
+                                            <h5 class="mb-0">30 GB</h5>
+                                        </div>
+                                        <div>
+                                            <p class="mb-0">Virtual Memory</p>
+                                            <h5 class="mb-0">1024 MB</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="month">
+                                        <h5>Rp 100.000 <span>/bln</span></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <template v-if="dataServer == '2'">
+                <div class="row">
+                    <div class="col">
+                        <h5>SERVER VPS SAS</h5>
+                    </div>
+                </div>
+            </template>
+            <div class="row unlimitedBandwith">
+                <div class="col">
+                    <p class="mt-3 mb-0"> <b> Unlimited Bandwidth </b>untuk semua paket.</p>
+                    <p class="mt-4">*VPS Pro Indonesia didukung dengan Teknologi HPE Nimble Storage Adaptive Flash
+                        Arrays Terbaru
+                        dengan waktu akses 100 kali lebih cepat dan kecepatan I/O yang lebih tinggi dibandingkan VPS SSD
+                        dan tingkat kegagalan yang rendah dengan jaminan Uptime 99.99% untuk kebutuhan Website dan
+                        Aplikasi</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- END SERVER VPS -->
+
+    <!-- VPS CUSTOM -->
+    <div class="container">
+        <section class="vpsCustom">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <div class="row align-items-center cardWrapper">
+                            <div class="col-lg-7">
+                                <div class="leftContent d-flex align-items-center">
+                                    <img src="./assets/img/vps-white.png" alt="">
+                                    <p>Butuh VPS Custom untuk Perusahaan anda ?</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 d-flex justify-content-end">
+                                <div class="rightContent">
+                                    <button class="btnPrimary">Daftarkan Sekarang</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- END VPS CUSTOM -->
+
+    <!-- INFO JARINGAN -->
+
+    <section class="infoJaringan">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="leftContent">
+                        <h2 class="text-white">Informasi Jaringan</h2>
+                        <div class="d-flex align-items-start mt-4 mb-1">
+                            <img src="./assets/svg/ceklist.svg" alt="">
+                            <p>Konektivitas OpenIXP upto 10 Gbps, IIX APJII upto 1 Gbps dan CDIX (Cyber Data Center) up
+                                to 1 Gbps untuk akses nasional/domestik.</p>
+                        </div>
+                        <div class="d-flex align-items-start mb-1">
+                            <img src="./assets/svg/ceklist.svg" alt="">
+                            <p>Didukung dengan Regional peering SGIX up to 1Gbps, dan beberapa Global Internet exchange
+                                sehingga server Anda dapat diakses dengan kencang dari luar negeri.</p>
+                        </div>
+                        <div class="d-flex align-items-start mb-1">
+                            <img src="./assets/svg/ceklist.svg" alt="">
+                            <p>Akses langsung ke server Google, Microsoft, Amazon, Facebook, Cloudflare dan Alibaba
+                                melalui jaringan CDN dengan kecepatan koneksi up to 1 Gbps.</p>
+                        </div>
+                        <div class="d-flex align-items-start mt-3">
+                            <button class="btnPrimary">Transfer Domain</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="rightContent">
+                        <h2 class="text-white">Anda Dapat Melakukan</h2>
+                        <div class="d-flex align-items-start mt-4 mb-1">
+                            <img src="./assets/svg/white-checklist.svg" alt="">
+                            <p>Manage Server VPS System Services, System services dan proses yang berjalan pada vps
+                                dapat di stop atau direstart kapanpun melalui web portal.</p>
+                        </div>
+                        <div class="d-flex align-items-start mb-1">
+                            <img src="./assets/svg/white-checklist.svg" alt="">
+                            <p>SSH via browsers, Terhubung ke SSH ke VPS langsung menggunakan browser.</p>
+                        </div>
+                        <div class="d-flex align-items-start mb-1">
+                            <img src="./assets/svg/white-checklist.svg" alt="">
+                            <p>Resource Monitorings, Monitoring CPU, RAM, disk space dan Indonesia.</p>
+                        </div>
+                        <div class="d-flex align-items-start mb-1">
+                            <img src="./assets/svg/white-checklist.svg" alt="">
+                            <p>Instalasi lebih dari ratusan script website di server vps Anda dengan 1 klik.</p>
+                        </div>
+                        <div class="d-flex align-items-start mb-1">
+                            <img src="./assets/svg/white-checklist.svg" alt="">
+                            <p>Melakukan manajemen untuk server Anda secara penuh (full) dan fleksibel.</p>
+                        </div>
+                        <div class="d-flex align-items-start mt-3">
+                            <button class="btnPrimary">Pilih Paket Hosting</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END INFO JARINGAN -->
+
+    <!-- ABOUT -->
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="row">
+                        <div class="navSide">
+                            <p @click="navSideList = '1' " :class="{ activeBorder : navSideList == '1' }" class="mb-0">
+                                Informasi</p>
+                            <p @click="navSideList = '2' " :class="{ activeBorder : navSideList == '2' }" class="mb-0">
+                                Fitur - Fitur</p>
+                            <p @click="navSideList = '3' " :class="{ activeBorder : navSideList == '3' }" class="mb-0">
+                                Perbandingan</p>
+                            <p @click="navSideList = '4' " :class="{ activeBorder : navSideList == '4' }" class="mb-0">
+                                Tambahan</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <template v-if="navSideList == '1'">
+                        <div class="row mb-4">
+                            <div class="col-lg-6">
+                                <div class="content">
+                                    <h3>Pengertian VPS </h3>
+                                    <p>Server VPS (Virtual Private Server) adalah sebuah metode membagi sumber daya
+                                        (resource) pada
+                                        sebuah physical server menjadi beberapa Virtual Server (Virtual Machines). VPS
+                                        sering juga
+                                        disebut sebagai teknologi server side tentang sistem operasi dan perangkat lunak
+                                        yang
+                                        memungkinkan sebuah mesin dengan kapasitas besar dibagi ke beberapa virtual
+                                        mesin.
+                                        Tiap
+                                        virtual mesin ini melayani sistem operasi dan perangkat lunak secara mandiri dan
+                                        dengan
+                                        konfigurasi yang cepat. Yuk berlangganan sekarang menggunakan layanan VPS Murah
+                                        Indonesia
+                                        dari IDCloudHost!</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content">
+                                    <h3>Prosesor Terbaik dan Terhandal </h3>
+                                    <p>VPS Murah Indonesia milik IDCloudHost Menggunakan Prosesor intel generasi terbaru
+                                        dengan RAM
+                                        dan Storage menggunakan teknologi HPE Nimble Storage Adaptive Flash Arrays maka
+                                        Anda
+                                        tidak
+                                        perlu ragu dengan performa server yang Anda digunakan.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-lg-6">
+                                <div class="content">
+                                    <h3>Cloud System dengan HPE Storage</h3>
+                                    <p>VPS Murah Indonesia milik IDCloudHost Menggunakan Prosesor intel generasi terbaru
+                                        dengan RAM dan Storage menggunakan teknologi HPE Nimble Storage Adaptive Flash
+                                        Arrays maka Anda tidak perlu ragu dengan performa server yang Anda digunakan.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content">
+                                    <h3>Kebebasan Konfigurasi</h3>
+                                    <p>Anda dapat secara bebas dalam melakukan konfigurasi server untuk kebutuhan (CPU,
+                                        RAM,
+                                        Storage, NAS, IPs, Control Panels, add-ons) dan variasi Template untuk
+                                        Deployment.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-lg-6">
+                                <div class="content">
+                                    <h3>Fleksibel dan Terukur</h3>
+                                    <p>Anda dapat melakukan Downgrade dan Upgrade server kapanpun diperlukan
+                                        menyesuaikan
+                                        kebutuhan Anda tanpa adanya syarat dan biaya tambahan.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="content">
+                                    <h3>Monitoring</h3>
+                                    <p>Server Anda dipantau 24/7 dari banyak serangan dan gangguan hardware yang dibantu
+                                        langsung oleh tim techinical support IDcloudHost yang berpengalaman.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-lg-6">
+                                <div class="content">
+                                    <h3>Request Penawaran Layanan </h3>
+                                    <p>Anda bisa melakukan request untuk kebutuhan layanan server VPS Murah Indonesia
+                                        untuk
+                                        website
+                                        dan aplikasi Anda di IDCloudHost. Silakan mengisi formulir kebutuhan layanan
+                                        dimana
+                                        nantinya
+                                        informasi paket layanan Anda akan dikirimkan melalui Email / Telpon. Silakan
+                                        mengisi
+                                        Formulir Request Layanan IDCloudHost pada link berikut :
+                                        https://idcloudhost.com/panduan/penawaran/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                    <template v-if="navSideList == '2'">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Tambahan</h3>
+                            </div>
+                        </div>
+                    </template>
+                    <template v-if="navSideList == '3'">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Fitur Fitur</h3>
+                            </div>
+                        </div>
+                    </template>
+                    <template v-if="navSideList == '4'">
+                        <div class="row">
+                            <div class="col">
+                                <h3>Perbandingan</h3>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <!-- BANTUAN -->
+    <div class="container">
+        <section class="bantuan">
+            <div class="row text-center title">
+                <div class="col">
+                    <h1>Pilihan Bantuan Teknis</h1>
+                    <p>Kami Menyediakan beberapa opsi Manage Service untuk Memudahkan Penggunaan Server VPS Anda</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <div class="content text-center mt-2">
+                        <img src="./assets/svg/bantuan1.svg" alt="">
+                        <h3 class="text-white">Self Manage (Default)</h3>
+                        <p class="mt-3">Pada layanan support ini layanan server VPS sepenuhnya menjadi tanggung jawab
+                            pengguna baik
+                            itu dalam hal intalasi (setup), manajemen server dan lainnya. Anda bisa memanfaatkan control
+                            panel dari IDCloudHost untuk bisa melakukan berbagai aktifitas konfigurasi server mulai dari
+                            reboot server dan upgrade / downgade CPU, RAM, dan Storage.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="content text-center mt-2">
+                        <img src="./assets/svg/bantuan2.svg" alt="">
+                        <h3 class="text-white">On Demand Support</h3>
+                        <p class="mt-3">Pilihan Support ini adalah terkait bantuan intalasi, konfigurasi, keamanan,
+                            gangguan, dan
+                            lainnya terkait server VPS yang bersifat one time atau tidak sering terjadi maka akan bisa
+                            meriquest layanan support ini melalui penawaran yang nantinya diberikan oleh tim iDCloudHost
+                            dengan harga terjagkau.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="content text-center mt-2">
+                        <img src="./assets/svg/bantuan3.svg" alt="">
+                        <h3 class="text-white">Full managed oleh IDCludHost</h3>
+                        <p class="mt-3">IDCloudHost akan membantu anda untuk mengelola server VPS anda secara
+                            keseluruhan dengan
+                            bantuan langsung oleh time profesional kami terkait instalasi, Migrasi, keamanan, monitoring
+                            24/7 dan aktifitas lainnya serta konsultasi secara gratis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- END BANtUAN -->
+
+    <!-- TANYA JAWAB -->
+    <section class="tanyaJawab">
+        <div class="container">
+            <div class="row text-center title">
+                <div class="col">
+                    <h1>Tanya Jawab</h1>
+                    <p>Pertanyaan yang sering diajukan Terkait Server VPS</p>
+                </div>
+            </div>
+            <div class="row faqWrapper">
+                <div class="col-lg-6 col-12 leftContent">
+                    <h5>FAQ</h5>
+                    <div style="margin-bottom: 35px;" @click="activeListFaqData = '1' "
+                        :class="{ activeListFaq : activeListFaqData == '1' }"
+                        class="d-flex align-items-center mt-4 listFaqWrapper">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path :class="{ activeListFaq : activeListFaqData == '1' }" class="myFill "
+                                d="M2 0H18C19.1 0 20 0.9 20 2V20L16 16H2C0.9 16 0 15.1 0 14V2C0 0.9 0.9 0 2 0ZM10 9C10.55 9 11 8.55 11 8V4C11 3.45 10.55 3 10 3C9.45 3 9 3.45 9 4V8C9 8.55 9.45 9 10 9ZM9 13H11V11H9V13Z"
+                                fill="#C0CCDB" />
+                        </svg>
+                        <p :class="{ activeListFaq : activeListFaqData == '1' }" class="mb-0">Apa itu Server VPS
+                            (Virtual Private Server)?</p>
+                    </div>
+                    <div style="margin-bottom: 35px;" @click="activeListFaqData = '2' "
+                        :class="{ activeListFaq : activeListFaqData == '2' }"
+                        class="d-flex align-items-center mt-4 listFaqWrapper">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path :class="{ activeListFaq : activeListFaqData == '2' }" class="myFill "
+                                d="M2 0H18C19.1 0 20 0.9 20 2V20L16 16H2C0.9 16 0 15.1 0 14V2C0 0.9 0.9 0 2 0ZM10 9C10.55 9 11 8.55 11 8V4C11 3.45 10.55 3 10 3C9.45 3 9 3.45 9 4V8C9 8.55 9.45 9 10 9ZM9 13H11V11H9V13Z"
+                                fill="#C0CCDB" />
+                        </svg>
+                        <p :class="{ activeListFaq : activeListFaqData == '2' }" class="mb-0">Apa Keuntungan Menggunakan
+                            Server VPS ?</p>
+                    </div>
+                    <div style="margin-bottom: 35px;" @click="activeListFaqData = '3' "
+                        :class="{ activeListFaq : activeListFaqData == '3' }"
+                        class="d-flex align-items-center mt-4 listFaqWrapper">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path :class="{ activeListFaq : activeListFaqData == '3' }" class="myFill"
+                                d="M2 0H18C19.1 0 20 0.9 20 2V20L16 16H2C0.9 16 0 15.1 0 14V2C0 0.9 0.9 0 2 0ZM10 9C10.55 9 11 8.55 11 8V4C11 3.45 10.55 3 10 3C9.45 3 9 3.45 9 4V8C9 8.55 9.45 9 10 9ZM9 13H11V11H9V13Z"
+                                fill="#C0CCDB" />
+                        </svg>
+                        <p :class="{ activeListFaq : activeListFaqData == '3' }" class="mb-0">Apa Fasilitas atau Fitur
+                            yang Diberikan di VPS ?</p>
+                    </div>
+                    <div style="margin-bottom: 35px;" @click="activeListFaqData = '4' "
+                        :class="{ activeListFaq : activeListFaqData == '4' }"
+                        class="d-flex align-items-center mt-4 listFaqWrapper">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path :class="{ activeListFaq : activeListFaqData == '4' }" class="myFill"
+                                d="M2 0H18C19.1 0 20 0.9 20 2V20L16 16H2C0.9 16 0 15.1 0 14V2C0 0.9 0.9 0 2 0ZM10 9C10.55 9 11 8.55 11 8V4C11 3.45 10.55 3 10 3C9.45 3 9 3.45 9 4V8C9 8.55 9.45 9 10 9ZM9 13H11V11H9V13Z"
+                                fill="#C0CCDB" />
+                        </svg>
+                        <p :class="{ activeListFaq : activeListFaqData == '4' }" class="mb-0">Siapa yang Cocok
+                            Menggunakan Layanan
+                            Server VPS ?</p>
+                    </div>
+                    <div style="margin-bottom: 35px;" @click="activeListFaqData = '5' "
+                        :class="{ activeListFaq : activeListFaqData == '5' }"
+                        class="d-flex align-items-center mt-4 listFaqWrapper">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path :class="{ activeListFaq : activeListFaqData == '5' }" class="myFill"
+                                d="M2 0H18C19.1 0 20 0.9 20 2V20L16 16H2C0.9 16 0 15.1 0 14V2C0 0.9 0.9 0 2 0ZM10 9C10.55 9 11 8.55 11 8V4C11 3.45 10.55 3 10 3C9.45 3 9 3.45 9 4V8C9 8.55 9.45 9 10 9ZM9 13H11V11H9V13Z"
+                                fill="#C0CCDB" />
+                        </svg>
+                        <p :class="{ activeListFaq : activeListFaqData == '5' }" class="mb-0">Bagaimana Cara Upgrade
+                            Server VPS di
+                            IDcloudhost ?</p>
+                    </div>
+                    <div style="margin-bottom: 35px;" @click="activeListFaqData = '6' "
+                        :class="{ activeListFaq : activeListFaqData == '6' }"
+                        class="d-flex align-items-center mt-4 listFaqWrapper">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path :class="{ activeListFaq : activeListFaqData == '6' }" class="myFill"
+                                d="M2 0H18C19.1 0 20 0.9 20 2V20L16 16H2C0.9 16 0 15.1 0 14V2C0 0.9 0.9 0 2 0ZM10 9C10.55 9 11 8.55 11 8V4C11 3.45 10.55 3 10 3C9.45 3 9 3.45 9 4V8C9 8.55 9.45 9 10 9ZM9 13H11V11H9V13Z"
+                                fill="#C0CCDB" />
+                        </svg>
+                        <p :class="{ activeListFaq : activeListFaqData == '6' }" class="mb-0">Bagaimana Cara Pindah VPS
+                            ke IDcloudhost ?</p>
+                    </div>
+                    <div style="margin-bottom: 35px;" @click="activeListFaqData = '7' "
+                        :class="{ activeListFaq : activeListFaqData == '7' }"
+                        class="d-flex align-items-center mt-4 listFaqWrapper">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path :class="{ activeListFaq : activeListFaqData == '7' }" class="myFill"
+                                d="M2 0H18C19.1 0 20 0.9 20 2V20L16 16H2C0.9 16 0 15.1 0 14V2C0 0.9 0.9 0 2 0ZM10 9C10.55 9 11 8.55 11 8V4C11 3.45 10.55 3 10 3C9.45 3 9 3.45 9 4V8C9 8.55 9.45 9 10 9ZM9 13H11V11H9V13Z"
+                                fill="#C0CCDB" />
+                        </svg>
+                        <p :class="{ activeListFaq : activeListFaqData == '7' }" class="mb-0">Bagaimana Jika Saya
+                            Membutuhkan Server
+                            VPS Custom ?</p>
+                    </div>
+                    <div style="margin-bottom: 35px;" @click="activeListFaqData = '8' "
+                        :class="{ activeListFaq : activeListFaqData == '8' }"
+                        class="d-flex align-items-center mt-4 listFaqWrapper">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path :class="{ activeListFaq : activeListFaqData == '8' }" class="myFill"
+                                d="M2 0H18C19.1 0 20 0.9 20 2V20L16 16H2C0.9 16 0 15.1 0 14V2C0 0.9 0.9 0 2 0ZM10 9C10.55 9 11 8.55 11 8V4C11 3.45 10.55 3 10 3C9.45 3 9 3.45 9 4V8C9 8.55 9.45 9 10 9ZM9 13H11V11H9V13Z"
+                                fill="#C0CCDB" />
+                        </svg>
+                        <p :class="{ activeListFaq : activeListFaqData == '8' }" class="mb-0">
+                            Bagaimana Jika Membutuhkan Server
+                            VPS Manage ?</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 rightContent">
+                    <template v-if="activeListFaqData == '1'">
+                        <h3>Apa itu Server VPS (Virtual Private Server ? )</h3>
+                        <p>Server VPS atau Virtual Private Server merupakan suatu sistem yang terbagi menjadi beberapa
+                            Virtual Machines. Sehingga hal ini memungkinkan pengguna untuk dapat melakukan instal sistem
+                            operasi sendiri pada server VPS.
+                            <br>
+                            <br>
+                            Hal ini ibarat kamu mempunyai ruangan sendiri sehingga kamu dapat dengan bebas melakukan
+                            konfigurasi dan hal lain pada server VPS kamu.
+                            <br>
+                            <br>
+                            Informasi Selengkapnya : Panduan Memilih Server VPS dari IDcloudhost</p>
+                    </template>
+                    <template v-if="activeListFaqData == '2'">
+                        <h3>Apa Keuntungan Menggunakan Server VPS ?</h3>
+                    </template>
+                    <template v-if="activeListFaqData == '3'">
+                        <h3>Apa Fasilitas atau Fitur yang Diberikan di VPS ?</h3>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END TANYA JAWAB -->
+
+    <!-- SEMPURNA -->
+    <section class="sempurna">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>Solusi Sempurna
+                        untuk Bisnis Anda</h1>
+                    <p>Dalam Waktu 3 Menit, Anda akan mendapatkan semua layanan dengan cepat. Tidak ada kewajiban untuk
+                        upgrade, downgrade atau cancel setiap waktu</p>
+                    <div class="buttonWrapper">
+                        <button>Buat Private Cloud</button>
+                        <button>Hubungi Kami</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="./assets/img/sempurna-img.png" alt="">
+                    <div class="subscribe">
+                        <p class="mb-2">Subscribe here to get update</p>
+                        <div class="inputWrapper d-flex justify-content-between">
+                            <input placeholder="Enter email address..." type="text">
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SEMPURNA -->
+
+    <!-- FOOTER -->
+    <div class="container">
+        <footer>
+            <div class="row mb-5">
+                <div class="col">
+                    <div class="desc">
+                        <h5>Server VPS Indonesia dengan Performa Cepat dan Stabil</h5>
+                        <p>Virtual Private Server atau Server VPS adalah sebuat tipe server yang menggunakan teknologi
+                            Virtualisasi untuk membagi server fisik menjadi beberapa server virtual yang terdiri dari
+                            spesifikasi dan fitur tertentu untuk kebutuhan akses data dan informasi untuk website dan
+                            aplikasi.
+                            Server VPS bisa diibaratkan sebuah kamar kostan yang dihuni oleh kita sendiri sehingga
+                            kebutuhan
+                            dan
+                            isi dari server vps merupakan kelola kita secara penuh. Server VPS Murah dari IDCloudhost
+                            menggunakan teknologi HPE Nimble Storage Adaptive Flash Arrays yang merupakan sebuah
+                            teknologi
+                            paling mutakhir dari Server VPS Indonesia dengan performa yang tidak diragukan lagi secara
+                            kualitas
+                            dan keamanan dari server VPS ini. Layanan VPS Murah dari IDCloudhost kenapa lebih murah
+                            dibandingkan
+                            provider lainnya, bukan berarti IDcloudhost mengurangi kualitas dari server VPS, namun VPS
+                            ini
+                            bersifat unmanage sehingga akan lebih murah dan terjangkau bagi Anda yang membutuhkan Server
+                            VPS
+                            Indonesia dengan garansi Uptime hingga 99.99%. Baca Selengkapnya ></p>
+                        <a href="#">Baca Selengkapnya ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="desc">
+                        <h5>About IDCH</h5>
+                        <p>IDCloudHost (PT Cloud Hosting Indonesia) adalah penyedia layanan Web Hosting Provider
+                            berbasis
+                            SSD Cloud Hosting yang mempunyai tujuan untuk selalu menjaga website tetap hidup dan cepat
+                            di
+                            akses dari berbagai negara. Saat ini tersedia Beberapa Data Center Utama yang dapat Anda
+                            gunakan
+                            dengan berlangganan menggunakan layanan Kami.</p>
+                        <div class="medsosWrapper">
+                            <img src="./assets/img/medsos/1.svg" alt="">
+                            <img src="./assets/img/medsos/2.svg" alt="">
+                            <img src="./assets/img/medsos/3.svg" alt="">
+                            <img src="./assets/img/medsos/4.svg" alt="">
+                            <img src="./assets/img/medsos/5.svg" alt="">
+                            <img src="./assets/img/medsos/6.svg" alt="">
+                        </div>
+                        <h5 class="mt-4 mb-0">(021) 40000995 </h5>
+                        <p>Layanan 24 jam call center kami selalu siap sedia membantu Anda</p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div>
+                        <ul>
+                            <li>
+                                <p>Service</p>
+                            </li>
+                            <li>
+                                <a href="#">Domain</a>
+                            </li>
+                            <li>
+                                <a href="#">Cloud Hosting</a>
+                            </li>
+                            <li>
+                                <a href="#">Reseller Hosting</a>
+                            </li>
+                            <li>
+                                <a href="#">Virtual Private Server</a>
+                            </li>
+                            <li>
+                                <a href="#">Dedicated Server</a>
+                            </li>
+                            <li>
+                                <a href="#">Layanan Lainnya</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div>
+                        <ul>
+                            <li>
+                                <p>Company</p>
+                            </li>
+                            <li>
+                                <a href="#">Tentang Perusahaan</a>
+                            </li>
+                            <li>
+                                <a href="#">Tim Kami</a>
+                            </li>
+                            <li>
+                                <a href="#">Media Kit</a>
+                            </li>
+                            <li>
+                                <a href="#">Ketentuan Layanan</a>
+                            </li>
+                            <li>
+                                <a href="#">Tanya Jawab</a>
+                            </li>
+                            <li>
+                                <a href="#">Afiliasi</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div>
+                        <ul>
+                            <li>
+                                <p>Links</p>
+                            </li>
+                            <li>
+                                <a href="#">Control Panel</a>
+                            </li>
+                            <li>
+                                <a href="#">Pembayaran</a>
+                            </li>
+                            <li>
+                                <a href="#">Status Server</a>
+                            </li>
+                            <li>
+                                <a href="#">Promo</a>
+                            </li>
+                            <li>
+                                <a href="#">Panduan</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div>
+                        <p class="mb-2"><b>Accepted Payment Methode</b></p>
+                    </div>
+                    <div class="paymentsWrapper">
+                        <img src="./assets/img/payments/1.png" alt="">
+                        <img src="./assets/img/payments/2.png" alt="">
+                        <img src="./assets/img/payments/3.png" alt="">
+                        <img src="./assets/img/payments/4.png" alt="">
+                        <img src="./assets/img/payments/5.png" alt="">
+                        <img src="./assets/img/payments/6.png" alt="">
+                        <img src="./assets/img/payments/7.png" alt="">
+                        <img src="./assets/img/payments/8.png" alt="">
+                        <img src="./assets/img/payments/9.png" alt="">
+                        <img src="./assets/img/payments/10.png" alt="">
+                        <img src="./assets/img/payments/11.png" alt="">
+                        <img src="./assets/img/payments/12.png" alt="">
+                        <img src="./assets/img/payments/13.png" alt="">
+                        <img src="./assets/img/payments/14.png" alt="">
+                        <img src="./assets/img/payments/15.png" alt="">
+                        <img src="./assets/img/payments/16.png" alt="">
+                        <img src="./assets/img/payments/17.png" alt="">
+                        <img src="./assets/img/payments/18.png" alt="">
+                        <img src="./assets/img/payments/19.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between akreditasi">
+                <div class="col-lg-4">
+                    <div>
+                        <p class="mb-0">2015 - 2020 © PT Cloud Hosting Indonesia</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p class="mb-0">AKREDITASI & PARTNER</p>
+                        <img src="./assets/img/payments/akreditasi1.png" alt="">
+                        <img src="./assets/img/payments/akreditasi2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- END FOOTER -->
+
+    <div class="container">
+        <section class="faq">
+            <div class="row text-center title">
+                <div class="col">
+                    <canvas></canvas>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- VUE CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <script>
+        new Vue({
+            el: '.tanyaJawab',
+            data: {
+                activeListFaqData: '1',
+            },
+        })
+
+        new Vue({
+            el: '.about',
+            data: {
+                navSideList: '1',
+            },
+        })
+
+        new Vue({
+            el: '.serverVps',
+            data: {
+                dataServer: '1',
+            },
+        })
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
