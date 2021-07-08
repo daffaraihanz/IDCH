@@ -1,0 +1,212 @@
+@media screen and (max-width: 367px) {
+
+    /* UTILITY */
+
+    /* NAVIGASI */
+    .navbar-nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* TANYA JAWAB */
+    .tanyaJawab .rightContent h3 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    .tanyaJawab .rightContent p {
+        letter-spacing: 0.05em;
+        line-height: 190%;
+    }
+
+    /* SEMPURNA */
+    .sempurna .buttonWrapper button:nth-child(1) {
+        margin-right: 0 !important;
+        margin-bottom: 15px;
+    }
+
+    .sempurna .buttonWrapper {
+        flex-direction: column;
+    }
+
+    .sempurna input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .sempurna .inputWrapper {
+        flex-direction: column;
+    }
+
+    .sempurna p {
+        line-height: 175%;
+        font-size: 15px;
+    }
+
+
+    .sempurna h1 {
+        font-size: 40px;
+    }
+
+    /* ABOUT */
+    .about .content p {
+        letter-spacing: 0.05em;
+        line-height: 190%;
+    }
+
+    .about .content h3 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+
+    /* CUSTOM VPS */
+    .vpsCustom .btnPrimary {
+        padding: 13px 15x !important;
+        font-size: 14px;
+    }
+
+    .vpsCustom .leftContent p {
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    /* SERVER VPS */
+    .serverVps .serverWrapper p {
+        padding: 5px 15px;
+        font-size: 11px;
+    }
+
+    .serverVps .dateWrapper p {
+        color: #b20098;
+        font-size: 12px;
+        letter-spacing: 1px;
+        font-weight: 700;
+    }
+
+    .serverVps .paketWrapper p {
+        font-size: 11px;
+    }
+
+    .serverVps .paketWrapper h5 {
+        font-size: 12px;
+    }
+
+    .serverVps .paket .month h5 {
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width: 991px) {
+    .sempurna .subscribe {
+        padding: 20px;
+    }
+
+    .sempurna .subscribe {
+        margin-top: -100px;
+    }
+
+    .sempurna {
+        padding-left: 15px;
+        height: 950px;
+        padding-top: 100px;
+    }
+
+    .tanyaJawab .faqWrapper {
+        /* width: 818px; */
+        height: 818px;
+        margin-top: 70px;
+        overflow: scroll;
+    }
+
+    .tanyaJawab .rightContent {
+        /* overflow: scroll; */
+        /* width: 500px; */
+    }
+
+    .about .navSide {
+        margin-bottom: 50px;
+    }
+
+    .serverVps {
+        margin-top: -50px;
+        /* z-index: -999; */
+        position: relative;
+        background: white;
+        border: #E5E9F2 solid 1px;
+        padding: 50px;
+        border-radius: 15px;
+    }
+
+    .whiteBg {
+        display: none;
+    }
+
+    footer .paymentsWrapper img {
+        margin-bottom: 20px;
+    }
+
+    .infoJaringan .leftContent,
+    .infoJaringan .rightContent {
+        overflow: scroll;
+    }
+
+    .vpsCustom .cardWrapper {
+        flex-direction: column;
+    }
+
+    .serverVps .content {
+        padding: 15px 20px;
+    }
+
+    .serverVps .unlimitedBandwith {
+        margin-top: 15px;
+        padding: 0 15px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .serverVps .paket .month {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        border-left: none;
+        border-top: solid 1px #E6EAF1;
+        align-items: center;
+        height: 100%;
+        padding: 20px 0;
+    }
+
+    .serverVps {
+        padding: 0px;
+    }
+
+    .serverVps .toggleRow {
+        justify-content: center;
+    }
+
+    .serverVps .serverWrapper {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px !important;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    header {
+        height: 600px;
+    }
+
+    .navbar {
+        background: linear-gradient(330deg, #5e00fc, #b20098, #22b4fa, #ff9e33);
+        background-size: 800% 800%;
+
+        -webkit-animation: AnimationName 15s ease infinite;
+        -moz-animation: AnimationName 15s ease infinite;
+        animation: AnimationName 15s ease infinite;
+    }
+}

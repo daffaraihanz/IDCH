@@ -55,7 +55,14 @@ footer {
     color: white;
 }
 
+.sempurna .subscribe button:hover {
+    background: white;
+    color: #FD4DF6;
+    transition: .3s;
+}
+
 .sempurna .subscribe button {
+    transition: .3s;
     background: rgba(255, 255, 255, 0.2);
     padding: 12px 14px;
     border: #A4ABBA 1px solid;
@@ -198,13 +205,11 @@ footer {
 }
 
 .tanyaJawab .leftContent {
-    overflow: scroll;
     padding: 40px 0px 33px 0px;
     border-right: solid 1px #EAEAEA;
 }
 
 .tanyaJawab .rightContent {
-    overflow: scroll;
     padding: 40px 45px;
 }
 
@@ -247,11 +252,14 @@ footer {
 }
 
 /* BANTUAN */
-.bantuan .title h1,
 .tanyaJawab .title h1 {
     background: linear-gradient(to right, #FD4DEB 10%, #664DFD 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.bantuan .title h1,
+    {
     font-size: 40px;
     /* color: #1B2C42; */
     letter-spacing: 0.05em;
@@ -588,11 +596,6 @@ header p {
         height: 818px;
         margin-top: 70px;
         overflow: scroll;
-    }
-
-    .tanyaJawab .rightContent {
-        /* overflow: scroll; */
-        /* width: 500px; */
     }
 
     .about .navSide {
